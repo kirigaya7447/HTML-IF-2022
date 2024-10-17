@@ -1,0 +1,109 @@
+
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="format.css">
+        <script>
+            function abreTRex0() {
+                var tree;
+                tree = document.getElementById("pal0").value;
+                if (tree == "Três") {
+                    alert("Parabéns!");
+                    document.getElementById("errT").innerHTML = ""
+                }
+                else if (tree == "") {
+                    document.getElementById("errT").innerHTML = "Aqui está vaziooo, O Grande Olho está vendo!!!"
+                }
+                else {
+                    document.getElementById("errT").innerHTML = "Você errou aqui, vamos lá, tente de novo!"
+                }
+            }
+            function abreTRex1() {
+                var seven;
+                seven = document.getElementById("pal1").value;
+                if (seven == "Sete") {
+                    alert("Isso mesmo, os anões não são barbudos demais ? AH e sabia que o plural de anões é na verdade: anãos");
+                    document.getElementById("errS").innerHTML = ""
+                }
+                else if (seven == "") {
+                    document.getElementById("errS").innerHTML = "Aqui está vaziooo, O Grande Olho está vendo!!!"
+                }
+                else {
+                    document.getElementById("errS").innerHTML = "Você errou aqui, vamos lá, tente de novo!"
+                }
+            }
+            function abreTRex2() {
+                var nine;
+                nine = document.getElementById("pal2").value;
+                if (nine == "Nove") {
+                    alert("Os homens são ambiciosos demais");
+                    document.getElementById("errN").innerHTML = ""
+                }
+                else if (nine == "") {
+                    document.getElementById("errN").innerHTML = "Aqui está vaziooo, O Grande Olho está vendo!!!"
+                }
+                else {
+                    document.getElementById("errN").innerHTML = "Você errou aqui, vamos lá, tente de novo!"
+                }
+            }
+            function abreTRex3() {
+                var one;
+                one = document.getElementById("pal3").value;
+                if (one == "Um") {
+                    if (document.getElementById("pal0").value == "" || document.getElementById("pal1").value == "" || document.getElementById("pal2").value == "" || document.getElementById("pal0").value != "Três" || document.getElementById("pal1").value == !"Sete" || document.getElementById("pal2").value != "Nove") {
+                        alert("O Sauron , O Senhor do Escuro, eu sempre o considerei muito legal, mas ao mesmo tempo, assutador demais")
+                        document.getElementById("errU").innerHTML = ""
+                    }
+                    else if(one == "Um"){
+                        alert("O Sauron , O Senhor do Escuro, eu sempre o considerei muito legal, mas ao mesmo tempo, assutador demais")
+                        alert("Parabéns, você acertou todos, aproveite o jogo agora:")
+                        document.getElementById("errU").innerHTML = ""
+                        document.write("<style type=\"text/css\"> #cob{ width:900px; height:650px; margin-top: 50px; } </style> <iframe id=\"cob\"src=\"https://trex-runner.com/\"></iframe>");
+                    }
+                }
+                else if (one == "") {
+                    document.getElementById("errU").innerHTML = "Aqui está vaziooo, O Grande Olho está vendo!!!"
+                }
+                else {
+                    document.getElementById("errU").innerHTML = "Você errou aqui, vamos lá, tente de novo!"
+                }
+            }
+        </script>
+    </head>
+    <title>Você consegue?</title>
+    
+    <body>
+        <div id="menT">
+            <a href="Index2.html">
+                <br><br><br><img src="Controle.png"></a><br>
+            <br><br><a href="Index1.html">
+                <img src="Mario Kart .gif"></a><br>
+        </div>
+        <p>Todos devemos conhecer o jogo do dinossauro do google<br>
+            (Principalmente nós Brasileiros que temos uma internet excelente né?)<br>
+            Bom, para jogá-lo, lhe proponho um pequeno jogo:</p><br>
+        <p> Acerte (por extenso) todos os anéis mencionados na primeira frase do livro: O Senhor dos Anés: A Sociedade do
+            Anel<br>
+            *DICA: BOA SORTE *</p><br>
+        <p><input id="pal0" type="text"> Anéis para os Reis-Elfos sob este céu;</p>
+        <span id="errT"> </span><br>
+        <button onclick="abreTRex0()">Enviar</button><br>
+        <p><input id="pal1" type="text"> para os Senhores-Anões em seus rochosos
+            corredores;</p>
+        <span id="errS"> </span><br>
+        <button onclick="abreTRex1()">Enviar</button><br>
+        <p><input id="pal2" type="text"> para os Homens Mortais fadados a morrer;</p>
+        <span id="errN"> </span><br>
+        <button onclick="abreTRex2()">Enviar</button><br>
+        <p><input id="pal3" type="text"> para o Senhor do Escuro em seu Escuro Trono,<br>
+            <span id="errU"> </span><br>
+            <button onclick="abreTRex3()">Enviar</button><br>
+            Na terra de Mordor, onde as Sombras se deitam.<br>
+            Um Anel para a todos governar, Um Anel para encontrá-los,<br>
+            Um Anel para a todos trazer e na Escuridão aprisioná-los,<br>
+            Na terra de Mordor, onde as Sombras se deitam.
+        </p>
+    </body>
+    
+    </html>

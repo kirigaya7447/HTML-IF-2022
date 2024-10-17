@@ -1,0 +1,66 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="format.css">
+    <script defer>
+        function contagem() {
+            let temp = document.getElementById("tempo").value;
+            document.getElementById("tempo").value = Number(temp) - 1;
+            if (temp == 0) {
+            document.write("Você é lento, perdeu play boy");
+        }
+        }
+        setInterval("contagem()", 1000);
+
+        function certo(cer) {
+            if (cer == "Michael") {
+                alert("Você ganhou parabéns")
+                document.write("<a href=\'https://www.google.com/search?q=halloween+2016&ei=SeQsY4ewC-fz1sQP3-qmqAc&gs_ssp=eJzj4tVP1zc0TDaML08qqyoxYPTiy0jMyckvT03NUzAyMDQDAJweCaA&oq=ha&gs_lp=ugYGCAEQARgJugYGCAIQARgIEgdnd3Mtd2l6uAED-AEBKgIIBTIKEAAYsQMYgwEYQzIKEC4YsQMY1AIYQzIIEC4YsQMYgwEyCBAAGIAEGLEDMhAQLhixAxiDARjHARjRAxhDMgQQLhhDMgUQABiABDIEEAAYQzIKEC4YsQMY1AIYQzIEEC4YQ8ICChAAGEcY1gQYsAPCAgcQABiwAxhDwgIOEAAY5AIY1gQYsAPYAQHCAg0QLhjIAxiwAxhD2AECwgILEAAYgAQYsQMYgwHCAggQABixAxiDAZAGE0j3JFDRB1jVCHABeAHIAQCQAQCYAZYBoAGMAqoBAzAuMuIDBCBBGADiAwQgRhgBiAYB&sclient=gws-wiz\'>Clique aqui e aproveite a mágica, faça muitos feitiços</a>");
+            }
+            else {
+                alert("Errado!")
+            }
+        }
+    </script>
+</head>
+<title>Olha a faca e seja rápido</title>
+
+<body>
+    <br><input id="tempo" type="text" value="5"><br>
+    <h1>Para este desafio:</h1><br>
+    <p>Seja rápido porque esse tempo já vai acabar, selecione o nome do jogo, que está na metade do texto a seguir:</p>
+    <br>
+    <p>Digite o nome do jogo aqui:</p><br>
+    <input onblur="certo(this.value)" type="text"><br>
+    <p>Karl Marx[a] (Tréveris, 5 de maio de 1818 – Londres, 14 de março de 1883)[2] foi um filósofo, economista,
+        historiador, sociólogo, teórico político, jornalista, e revolucionário socialista alemão. Nascido em Tréveris,
+        Prússia, Marx estudou direito e filosofia nas universidades de Bona e Berlim. Casou-se com a crítica de teatro e
+        ativista política alemã Jenny von Westphalen em 1843. Devido às suas publicações políticas, Marx tornou-se
+        apátrida e viveu no exílio com a sua mulher e filhos em Londres durante décadas, onde continuou a desenvolver o
+        seu pensamento em colaboração com o pensador alemão Friedrich Engels e a publicar os seus escritos, pesquisando
+        na Sala de Leitura do Museu Britânico. Os seus títulos mais conhecidos são o panfleto Manifesto Comunista de
+        1848 e o triplo volume O Capital (1867–1883). O pensamento político e filosófico de Marx teve uma enorme
+        influência na história intelectual, económica e política subsequente. O seu nome tem sido usado como adjetivo,
+        substantivo e escola de teoria social.
+        As teorias críticas de Marx sobre sociedade, economia e política, entendidas coletivamente como marxismo,
+        sustentam que as sociedades humanas se desenvolvem através da luta de classes. No modo capitalista de produção,
+        isto manifesta-se no conflito entre as classes dirigentes (conhecidas como a burguesia) que controlam os meios
+        de produção e as classes trabalhadoras (conhecidas como o proletariado) que permitem</p>
+    <p>Michael</p>
+    <p> a existência destes meios através da venda da sua força de trabalho em troca de salários. Empregando uma
+        abordagem crítica conhecida como materialismo histórico, Marx previu que o capitalismo produzia tensões internas
+        como os sistemas socioeconómicos anteriores e que estas levariam à sua autodestruição e substituição por um novo
+        sistema conhecido como o modo de produção socialista. Para Marx, os antagonismos de classe sob o capitalismo —
+        em parte devido à sua instabilidade e natureza propensa a crises — iriam dar origem ao desenvolvimento da
+        consciência de classe da classe trabalhadora, levando à sua conquista do poder político e, eventualmente, ao
+        estabelecimento de uma sociedade comunista sem classes, constituída por uma livre associação de produtores.[3]
+        Marx insistiu ativamente na sua implementação, argumentando que a classe trabalhadora deveria levar a cabo uma
+        ação proletária revolucionária organizada para derrubar o capitalismo e provocar a emancipação socioeconómica.
+        Marx é descrito como uma das figuras mais influentes na história da humanidade, e o seu trabalho tem sido
+        elogiado e criticado.[4] Muitos intelectuais, sindicatos, artistas e partidos políticos em todo o mundo foram
+        influenciados pelo trabalho de Marx, com muitos a modificarem ou adaptarem as suas ideias. Marx é tipicamente
+        citado como um dos principais arquitectos da ciência social moderna.</p>
+</body>
+
+</html>

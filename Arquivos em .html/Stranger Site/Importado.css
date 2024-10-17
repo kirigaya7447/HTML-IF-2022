@@ -1,0 +1,48 @@
+body{
+    width: auto;
+    height: 100%;
+    background-image: url(Images/Strangers\ fotos.jpg);
+    background-attachment: fixed;
+    color: red;
+}
+#oHenrique{
+    width: auto;
+    height: auto;
+    border: solid red 2px;
+    align-items: center;
+    background-color: black;
+    color: red;
+    margin: auto;
+}
+#oHenrique:hover{
+    opacity: 0.5;    
+}
+#oHenrique:hover li a:hover{
+    opacity: 1;
+    color: rgb(255, 60, 60);
+}
+ul li {
+    display: inline;
+}
+a:active{
+    color: rgba(255, 0, 0, 0.541);
+}
+a:visited{
+    color: rgb(255, 131, 131);
+}
+.images{
+    border-radius: 50%;
+}
+.images:hover{
+    transition: border-radius 0.5s ;
+    border-radius: 50%;
+}
+.tam{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 50px;
+    opacity: 0.5;
+}
+.lal{
+    opacity: 0.5;
+}

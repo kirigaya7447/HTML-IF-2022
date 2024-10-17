@@ -1,0 +1,100 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <script defer>
+        function relogio() {
+            let temp = document.getElementById("rel").value;
+            document.getElementById("rel").value = Number(temp) + 1;
+        }
+        function javas() {
+            ja = document.getElementById("nao").value;
+            if (ja == "Não" || ja == "Nao" || ja == "não" || ja == "nao") {
+                document.getElementById("err0").innerHTML = "Correto!";
+            }
+            else {
+                document.getElementById("err0").innerHTML = "Errado";
+            }
+        }
+        function uhuu() {
+            ja = document.getElementById("for").value;
+            if (ja == "For" || ja == "for") {
+                document.getElementById("err1").innerHTML = "Correto!";
+            }
+            else {
+                document.getElementById("err1").innerHTML = "Errado";
+            }
+        }
+        function tube() {
+            ja = document.getElementById("you").value;
+            if (ja == "Sim" || ja == "sim") {
+                document.getElementById("err2").innerHTML = "Correto!<br> OOOOO se da";
+            }
+            else {
+                document.getElementById("err2").innerHTML = "Errado";
+            }
+        }
+        function kies() {
+            ja = document.getElementById("coo").value;
+            if (ja == "Não" || ja == "Nao" || ja == "não" || ja == "nao") {
+                document.getElementById("err3").innerHTML = "Correto!";
+            }
+            else {
+                document.getElementById("err3").innerHTML = "Errado";
+            }
+        }
+        function gosling() {
+            ja = document.getElementById("james").value;
+            if (ja == "James Gosling" || ja == "James gosling" || ja == "james Gosling" || ja == "james gosling") {
+                document.getElementById("err4").innerHTML = "Correto!<br>Essa pergunta fez quantos perderem?kkkkkk";
+            }
+            else {
+                document.getElementById("err4").innerHTML = "Errado";
+            }
+        }
+        function finalizar() {
+		if (document.getElementById("nao").value == "Não" || document.getElementById("nao").value == "Nao" || document.getElementById("nao").value == "não" || document.getElementById("nao").value == "nao" 
+        && document.getElementById("for").value == document.getElementById("for").value == "For" || document.getElementById("for").value == "for" 
+        && document.getElementById("you").value == "Sim" || document.getElementById("you").value == "sim"
+        && document.getElementById("coo").value == "Não" || document.getElementById("coo").value == "Nao" || document.getElementById("coo").value == "não" || document.getElementById("coo").value == "nao"
+        && document.getElementById("james").value == "James Gosling" || document.getElementById("james").value == "James gosling" || document.getElementById("james").value == "james Gosling" || document.getElementById("james").value == "james gosling") {
+			let fim = document.getElementById("rel").value;
+			alert("Finalizado as perguntas em: " + fim + " segundos. Parabéns!!!");
+		}
+		else {
+			alert("Algumas das respostas estao erradas! Vamos você vai conseguir :)");
+		}
+	}
+        setInterval("relogio()", 1000);
+    </script>
+</head>
+<title>Segundo quiz</title>
+<h1>Boa sorte aí nas respostas</h1>
+
+<body>
+    <input id="rel" type="text" value="1"><br>
+    <p>javaScript é considerada uma linguagem de programação?</p>
+    <input id="nao" type="text"><br><br>
+    <span id="err0"></span><br>
+    <button onclick="javas()">Conferir</button>
+    <p>Cite o loop de repetição mais facil(simples)</p>
+    <input id="for" type="text"><br><br>
+    <span id="err1"></span><br>
+    <button onclick="uhuu()">Conferir</button>
+    <p>Dá para "editar" o youtube?</p>
+    <input id="you" type="text"><br><br>
+    <span id="err2"></span><br>
+    <button onclick="tube()">Conferir</button>
+    <p>Os cookies de sites são feitos somente em javaScript?</p>
+    <input id="coo" type="text"><br><br>
+    <span id="err3"></span><br>
+    <button onclick="kies()">Conferir</button>
+    <p>A mais difícil</p>
+    <p>Quem criou a linguagem Java?</p>
+    <input id="james" type="text"><br><br>
+    <span id="err4"></span><br>
+    <button onclick="gosling()">Conferir</button><br><br>
+    <button onclick="finalizar()">Encerrar tentativa</button>
+</body>
+
+</html>

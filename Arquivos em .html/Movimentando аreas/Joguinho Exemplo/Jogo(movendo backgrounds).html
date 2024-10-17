@@ -1,0 +1,41 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Movimentando Background</TITLE>
+	<link rel="stylesheet" type="text/css" href="Mudar.css" />
+	<script>
+		var x = -300;
+		var y = -300;
+		document.onkeydown = mover;
+		function mover(teclado) {
+			if (teclado.keyCode == 38) {
+				y = y + 100;
+				document.getElementById("box").style.backgroundPosition = x + "px " + y + "px";
+			}
+			else if (teclado.keyCode == 40) {
+				y = y - 100;
+				document.getElementById("box").style.backgroundPosition = x + "px " + y + "px";
+			}
+			else if (teclado.keyCode == 37) {
+				x = x + 100;
+				document.getElementById("box").style.backgroundPosition = x + "px " + y + "px";
+			}
+			else if (teclado.keyCode == 39) {
+				x = x - 100;
+				document.getElementById("box").style.backgroundPosition = x + "px " + y + "px";
+			}
+		}
+	</script>
+</HEAD>
+
+<BODY>
+	<div id="page_frame">
+		<div id="container">
+			<h2>Movimentando Background</h2>
+			<div id="box">
+			</div>
+		</div>
+	</div>
+</BODY>
+
+</HTML>

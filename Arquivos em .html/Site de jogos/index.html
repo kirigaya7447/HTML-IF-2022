@@ -1,0 +1,26 @@
+<html lang = "pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="format.css">
+        <script defer>
+            function tocar(){
+                let play = document.getElementById("au");
+                play.play();
+            }
+            function pausar(){
+                let para = document.getElementById("au");
+                para.pause();
+            }
+        </script>
+    </head>
+    <title>Início</title>
+    <body id="prim">
+        <p>Clique aqui para se sentir nos anos 80 e iniciar sua aventura:</p>
+        <audio id="au" controls><source src="Soft Rock 80s And 90s Mix -- Best Soft Rock Songs 80s 90s(MP3_128K).mp3" type="audio/mpeg"></audio><br>
+        <button onclick="tocar()">Play</button><br>
+        <button onclick="pausar()">Pause</button><br>
+        <a id="link" href="Index1.html" target="t_blank">Inicio</a><br><br>
+        <p>Escaneie o código a seguir e aproveite</p>
+        <img id="never" src="Never Gonna Give You Up.jpg">
+    </body>
+</html>

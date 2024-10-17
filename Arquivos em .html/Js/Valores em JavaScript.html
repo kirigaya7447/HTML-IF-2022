@@ -1,0 +1,32 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <script defer>
+            function nom(nom){
+                document.write(nom );
+            }
+            function gil(jogo,){
+                if(jogo != "Free Fire"){
+                    document.write(", você é muito fodaaa, escolheu o " + jogo );
+                }
+                else{
+                    document.write("HAHHAHAHAHAHHAHAH corno");
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <label>Diga seu nome:</label>
+        <input onblur = "nom(this.value)">
+        <h1>Escolha o melhor:</h1>
+        <select onchange="gil(this.value)">
+            <option>Selecione:</option>
+            <option>God of War 2018</option>
+            <option>Far Cry</option>
+            <option>Assassin's Creed</option>
+            <option>GTA</option>
+            <option>Need for Speed</option>
+            <option>Free Fire</option>
+        </select>
+    </body>
+</html>

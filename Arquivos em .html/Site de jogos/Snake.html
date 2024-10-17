@@ -1,0 +1,22 @@
+<html lang = "pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="format.css">
+        <script defer>
+            function abreCobra(data){
+                if(data == "18/12/1946"){
+                document.write("<style type=\"text/css\"> #cob{ width:900px; height:650px; margin-top: 50px; } </style> <iframe id=\"cob\"src=\"https://snake.io/\"></iframe>");
+            }
+            else{
+                alert("Você errou! Tente de novo");
+            }}
+        </script>
+    </head>
+    <title>Jogo da cobrinha</title>
+    <body>
+        <p>Todos devemos conhecer aquele jogo da cobrinha esfomeada, alguns como o autor deste site, devem se lembrar dele no Nokia tijolo né?<br>
+        Pois então, para jogar o do google, digite a data de nascimento de Steven Spielberg(diretor de <br>
+        Jurassic Park, E.T., Cavalo de Guerra, Guerra dos Mundos, O resgate do Soldado Rian e outros) </p>
+        <input onblur="abreCobra(this.value)" type="text">
+    </body>
+</html>

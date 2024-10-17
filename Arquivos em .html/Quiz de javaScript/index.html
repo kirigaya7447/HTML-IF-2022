@@ -1,0 +1,175 @@
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+</head>
+<script defer>
+
+	function tempo() {
+		let temp = document.getElementById("rel").value;
+		document.getElementById("rel").value = Number(temp) + 1;
+	}
+	function charles() {
+		data = document.getElementById("data").value;
+		if (data == "16/04/1889") {
+			document.getElementById("err0").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err0").innerHTML = "Errado";
+		}
+	}
+	function michael() {
+		id = document.getElementById("idMichael").value;
+		if (id == "50") {
+			document.getElementById("err1").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err1").innerHTML = "Errado";
+		}
+	}
+	function jimi() {
+		nome1 = document.getElementById("guita").value;
+		if (nome1 == "Jimi Hendrix") {
+			document.getElementById("err2").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err2").innerHTML = "Errado";
+		}
+	}
+	function titulo() {
+		tag = document.getElementById("tag").value;
+		if (tag == "<title>") {
+			document.getElementById("err3").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err3").innerHTML = "Errado";
+		}
+	}
+	function musica() {
+		mu = document.getElementById("music").value;
+		if (mu == "Never Ending Story") {
+			document.getElementById("err4").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err4").innerHTML = "Errado";
+		}
+	}
+	function cantora() {
+		canta = document.getElementById("cant").value;
+		if (canta == "Selena Gomez") {
+			document.getElementById("err5").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err5").innerHTML = "Errado";
+		}
+	}
+	function adolf() {
+		meister = document.getElementById("meister").value;
+		if (meister == "Adolf Hitler") {
+			document.getElementById("err6").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err6").innerHTML = "Errado";
+		}
+	}
+	function copoA() {
+		copo = document.getElementById("americano").value;
+		if (copo == "Americano") {
+			document.getElementById("err7").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err7").innerHTML = "Errado";
+		}
+	}
+	function whi() {
+		loop = document.getElementById("loop").value;
+		if (loop == "while" || loop == "for" || loop == "do while") {
+			document.getElementById("err8").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err8").innerHTML = "Errado";
+		}
+	}
+	function cassse() {
+		 langui = document.getElementById("python").value;
+		if (langui == "Python") {
+			document.getElementById("err9").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err9").innerHTML = "Errado";
+		}
+	}
+		function phy() {
+		jav = document.getElementById("java").value;
+		if (jav == "javaScript") {
+			document.getElementById("err10").innerHTML = "Correto!";
+		}
+		else {
+			document.getElementById("err10").innerHTML = "Errado";
+		}
+	}
+	function finalizar() {
+		if (document.getElementById("data").value == "16/04/1889" && document.getElementById("idMichael").value == "50" && document.getElementById("guita").value == "Jimi Hendrix" && document.getElementById("tag").value == "<title>" && document.getElementById("music").value == "Never Ending Story" && document.getElementById("cant").value == "Selena Gomez" && document.getElementById("meister").value == "Adolf Hitler" && document.getElementById("americano").value == "Americano" && document.getElementById("loop").value  == "while" || document.getElementById("loop").value == "for" || document.getElementById("loop").value == "do while" && document.getElementById("python").value == "Python" && document.getElementById("java").value == "javaScript") {
+			let fim = document.getElementById("rel").value;
+			alert("Finalizado as perguntas em: " + fim + " segundos. Parabéns!!!");
+		}
+		else {
+			alert("Algumas das respostas estao erradas! Vamos você vai conseguir :)");
+		}
+	}
+	setInterval("tempo()", 1000);
+</script>
+<title>Teste fácil</title>
+
+<body>
+	<input id="rel" type="text" value="1"><br>
+	<h1>Atenção:</h1>
+	<p>Responda as perguntas a seguir e veremos o quão rápido você consegue ser:</p><br><br>
+	<p>Quando nasceu Charles Chaplin?</p>
+	<input id="data" type="text"><br><br>
+	<span id="err0"></span><br>
+	<button onclick="charles()">Conferir</button>
+	<p>Quantos anos tinha michael jackson quando morreu?</p>
+	<input id="idMichael" type="text"><br><br>
+	<span id="err1"></span><br>
+	<button onclick="michael()">Conferir</button>
+	<p>Quem e considerado o maior guitarrista do mundo?</p>
+	<input id="guita" type="text"><br><br>
+	<span id="err2"></span><br>
+	<button onclick="jimi()">Conferir</button>
+	<p>Qual tag da linguagem HTML é responsável por dar um título a página?(Coloque "<>" na resposta)</p>
+	<input id="tag" type="text"><br><br>
+	<span id="err3"></span><br>
+	<button onclick="titulo()">Conferir</button>
+	<p>Que música é cantada por Dustin e sua namorada na série Strangher Things na 3ª temporada?</p>
+	<input id="music" type="text"><br><br>
+	<span id="err4"></span><br>
+	<button onclick="musica()">Conferir</button>
+	<p>Qual a cantora pop com maior número de seguidores no instagram?</p>
+	<input id="cant" type="text"><br><br>
+	<span id="err5"></span><br>
+	<button onclick="cantora()">Conferir</button>
+	<p>Qual foi o autor do livro titulado: Mein Kampf(Minha Luta)?</p>
+	<input id="meister" type="text"><br><br>
+	<span id="err6"></span><br>
+	<button onclick="adolf()">Conferir</button>
+	<p>Qual o nome do copo mais presente nos bares e casas do Brasil?</p>
+	<input id="americano" type="text"><br><br>
+	<span id="err7"></span><br>
+	<button onclick="copoA()">Conferir</button><br><br>
+	<p>Cite uma(qualquer uma das três principais) função de loop de linguagem de programação:</p>
+	<input id="loop" type="text"><br><br>
+	<span id="err8"></span><br>
+	<button onclick="whi()">Conferir</button>
+	<p>Qual é considerada a linguagem de programação mais fácil e simples?</p>
+	<input id="python" type="text"><br><br>
+	<span id="err9"></span><br>
+	<button onclick="cassse()">Conferir</button>
+	<p>Qual o nome da "linguagem da web", que é usada para estilizar páginas web em html(ELA NÃO É UMA LINGUAGEM DE PROGRAMAÇÃO)?</p>
+	<input id="java" type="text"><br><br>
+	<span id="err10"></span><br>
+	<button onclick="phy()">Conferir</button>
+	<p>Aperte aqui para enviar tudo e finalizar sua tentativa:</p>
+	<button onclick="finalizar()">Finalizar</button>
+</body>
+</html>

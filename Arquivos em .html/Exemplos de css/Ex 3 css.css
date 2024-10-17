@@ -1,0 +1,17 @@
+body{
+	background-color:silver;
+}
+h2{
+	color:gold;
+	font-size:500px;
+}
+p{
+	color:green;
+	font-size:500px;
+	font-style:italic;
+}
+h4{
+	color:orange;
+	font-size:500px;
+	font-weight:bold;
+}

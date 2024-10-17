@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Formata Div.css">
+        <script defer>
+            var baixo = 100;
+            var direita = 100;
+            document.onkeydown = mover;
+            function mover(local){
+                if(local.keyCode == 39){
+                    direita = direita + 10;
+                    document.getElementById("box").style.marginLeft = direita + "px";
+                }
+                else if(local.keyCode == 40){
+                    baixo = baixo + 10;
+                    document.getElementById("box").style.marginTop = baixo + "px";
+                }
+                else if(local.keyCode == 37){
+                    direita = direita - 10;
+                    document.getElementById("box").style.marginLeft = direita + "px";
+                }
+                else if(local.keyCode == 38){
+                    baixo = baixo - 10;
+                    document.getElementById("box").style.marginTop = direita + "px";
+                }
+            }
+        </script>
+    </head>
+    <title>Div</title>
+    <body>
+        <div id="box">
+        </div>
+    </body>
+</html>

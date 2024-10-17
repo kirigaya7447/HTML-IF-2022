@@ -1,0 +1,17 @@
+body{
+	background-color:green;
+}
+#pig{
+	background-color: red;
+	width:150px;
+	height:300px;
+	margin-left:300px;
+	margin-top:100px;
+	margin-bottom:290px;
+	margin-right:30px;
+	padding-left:50px;
+	padding-top:48px;
+	padding-bottom:30px;
+	padding-right:49px;
+	border:10px solid black;
+}

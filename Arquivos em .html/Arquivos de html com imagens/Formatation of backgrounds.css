@@ -1,0 +1,11 @@
+div{
+    width: 600px;
+    height:450px;
+    background-image: url(Money.jpeg);
+    background-size: 100% 100%;
+    border: 1px solid black;
+}
+body{
+    background-image: url(MONEYY.jpeg);
+    background-size: 100% 100%;
+}
