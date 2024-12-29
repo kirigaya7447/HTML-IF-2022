@@ -1,9 +1,9 @@
 #prim{
-    color:rgb(177, 180, 12);
+    color:	rgb(215, 40, 40);
     background-color: black;
 }
 body{
-    color: rgb(177, 180, 12);
+    color: 	rgb(215, 40, 40);
     height: 400px;
     width: 700px;
     background-image:url(Mario.jpeg);
